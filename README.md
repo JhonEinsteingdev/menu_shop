@@ -70,6 +70,36 @@ pnpm install
 pnpm dev
 ```
 
+## 🌐 Despliegue
+
+### GitHub Pages (Recomendado)
+
+El proyecto está configurado para desplegarse automáticamente en GitHub Pages:
+
+1. **Crear repositorio en GitHub**
+2. **Subir el código** (el workflow se ejecutará automáticamente)
+3. **Configurar GitHub Pages** en Settings > Pages:
+   - Source: "GitHub Actions"
+   - Branch: `main`
+
+**URL de ejemplo:** `https://tu-usuario.github.io/recipe-shopping-app`
+
+### Build Manual
+
+```bash
+# Build para producción
+pnpm run build:gh-pages
+
+# Build estático
+pnpm run build:static
+```
+
+### Otros Servicios
+
+- **Vercel**: Conecta tu repositorio de GitHub
+- **Netlify**: Arrastra la carpeta `out` después del build
+- **Firebase Hosting**: Configura con `firebase.json`
+
 ## 🎯 Funcionalidades Detalladas
 
 ### Gestión de Recetas

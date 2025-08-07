@@ -6,13 +6,17 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:static": "next build && next export",
+    "build:gh-pages": "NODE_ENV=production next build",
     "start": "next start",
     "lint": "next lint",
     "type-check": "tsc --noEmit",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "init-repo": "./scripts/init-repo.sh",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "deploy:gh-pages": "npm run build:gh-pages && touch out/.nojekyll",
+    "deploy": "./scripts/deploy.sh"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.1.2",
