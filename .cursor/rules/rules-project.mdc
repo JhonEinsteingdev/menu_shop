@@ -1,0 +1,46 @@
+---
+description: App de recetas y compras 
+globs:
+alwaysApply: true
+---
+- Usa siempre tabulación para formatear tu código.
+
+- Prioriza las soluciones simples. Lo más sencillo suele ser más fácil de mantener.
+
+- Después de hacer cambios, reinicia SIEMPRE el servidor para verificar que todo funcione correctamente.
+
+- Finaliza cualquier servidor de pruebas anterior antes de iniciar uno nuevo.
+
+- Reutiliza código existente siempre que sea posible. No reinventes la rueda si ya hay soluciones disponibles.
+
+- Evita duplicar código. Si una lógica ya existe, reutilízala o adáptala.
+
+- Ten en cuenta todos los entornos de ejecución: desarrollo, pruebas y producción.
+
+- Haz solo los cambios solicitados o aquellos bien entendidos y que estén directamente relacionados con la tarea.
+
+- Al corregir bugs, no introduzcas nuevas tecnologías sin antes agotar todas las opciones con la implementación actual. Si decides hacerlo, elimina la lógica anterior para evitar duplicidades.
+
+- Mantén el código limpio y bien organizado.
+
+- Evita usar scripts directamente en archivos. Si el script solo se ejecutará una vez, considera otras opciones más seguras y limpias.
+
+- Comenta tu código solo cuando sea necesario. El código debe explicarse solo con nombres claros y estructuras lógicas. Usa comentarios para aclarar intenciones, no para explicar qué hace cada línea.
+
+- Usa nombres descriptivos para variables, funciones y clases. Evita abreviaciones poco claras como x, temp, val, excepto cuando el contexto lo justifique (por ejemplo, en bucles cortos).
+
+- Aplica el principio KISS: Keep It Simple, Stupid. No compliques la solución más de lo necesario.
+
+- Aplica el principio DRY: Don't Repeat Yourself. Extrae lógica repetida en funciones reutilizables.
+
+- Haz commits pequeños y frecuentes. Cada cambio debe tener un propósito claro, lo que facilita revisar el historial y encontrar errores.
+
+- Escribe pruebas automáticas (tests) si es posible. Ayudan a detectar errores rápidamente y evitan regresiones.
+
+- Documenta las decisiones importantes del proyecto. Usa un archivo README.md o una wiki interna para registrar por qué se eligió una herramienta o arquitectura determinada.
+
+- Mide el impacto antes de hacer refactorings grandes. Pregunta: ¿es necesario? ¿aporta valor? ¿cuál es el riesgo?
+
+- Ten un entorno local lo más parecido al de producción. Esto reduce la probabilidad de errores inesperados en el despliegue.
+
+- Revisa el código de tus compañeros (code reviews). Y permite que revisen el tuyo. Siempre se aprende algo.
